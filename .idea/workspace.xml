@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fc4f5c1-c089-43d2-a182-073102f0e6cd" name="Changes" comment="" />
+    <list default="true" id="2fc4f5c1-c089-43d2-a182-073102f0e6cd" name="Changes" comment="add Selenium tests">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/checkActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/checkEmailInHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HeaderPageMesto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePageMesto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPageMesto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePageMesto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPageMesto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPageMesto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/addNewContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/addNewContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/profileImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/profileImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/scrollToFirstCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scrollToFirstCard.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +31,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2M03fCiUCRsNsvAjepCNF4VKi0t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,6 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -37,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Selenium">
+  <component name="RunManager" selected="JUnit.checkActivity">
     <configuration name="All in Selenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="PACKAGE_NAME" value="" />
@@ -55,25 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="profileImage (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="checkActivity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="profileImage" />
+      <option name="MAIN_CLASS_NAME" value="checkActivity" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="profileImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="checkEmailInHeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.profileImage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="checkEmailInHeader" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Selenium" />
+        <item itemvalue="JUnit.checkActivity" />
         <item itemvalue="JUnit.addNewContent" />
+        <item itemvalue="JUnit.checkEmailInHeader" />
+        <item itemvalue="JUnit.All in Selenium" />
         <item itemvalue="JUnit.scrollToFirstCard" />
-        <item itemvalue="JUnit.profileImage (1)" />
-        <item itemvalue="JUnit.profileImage" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +130,30 @@
       <option name="presentableId" value="Default" />
       <updated>1676890774250</updated>
     </task>
+    <task id="LOCAL-00001" summary="add Selenium tests">
+      <created>1677039723754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677039723754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add Selenium tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Selenium tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.time.Duration;
+
 public class profileImage {
 
     private WebDriver driver;
@@ -15,13 +17,14 @@ public class profileImage {
     public void test() {
 
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.get("https://qa-mesto.praktikum-services.ru/");
+
         // Авторизация
         driver.findElement(By.id("email")).sendKeys("makhmutov_16@gmail.com");
         driver.findElement(By.id("password")).sendKeys("123456");
         driver.findElement(By.className("auth-form__button")).click();
-        new WebDriverWait(driver, 3)
+        new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.className("profile__image")));
         // Клик по изображению профиля
         driver.findElement(By.cssSelector(".profile__image")).click();

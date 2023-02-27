@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import java.time.Duration;
+
 public class addNewContent {
 
     private WebDriver driver;
@@ -21,7 +23,7 @@ public class addNewContent {
         driver.findElement(By.id("email")).sendKeys("makhmutov_16@gmail.com");
         driver.findElement(By.id("password")).sendKeys("123456");
         driver.findElement(By.className("auth-form__button")).click();
-        new WebDriverWait(driver, 3)
+        new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.className("profile__image")));
         // Кликни по кнопке добавления нового контента
         driver.findElement(By.className("profile__add-button")).click();
@@ -32,7 +34,7 @@ public class addNewContent {
         // Сохрани контент
         driver.findElement(By.xpath(".//form[@name='new-card']/button[text()='Сохранить']")).click();
         // Дождись появления кнопки удаления карточки
-        new WebDriverWait(driver, 3)
+        new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//button[@class='card__delete-button card__delete-button_visible']")));
         // Удали контент
         driver.findElement(By.xpath(".//button[@class='card__delete-button card__delete-button_visible']")).click();
